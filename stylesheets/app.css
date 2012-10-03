@@ -1,0 +1,133 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	background: #000 url('../images/yoin/bg.jpg');
+}
+
+a, a:hover, a:link, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -30px;
+}
+
+#header {
+	background-color: #fd6d35;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.45)), color-stop(50%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	-webkit-box-shadow: inset 0 -1px 0 0 darken(#fd6d35, 9%);
+}
+
+#header-content {
+	font-size: 18px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#content {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+#logo-vid-content {
+	margin-left: auto;
+  margin-right: auto;
+}
+
+#logo-with-slogan {
+	margin-top: 100px;
+}
+
+#video {
+	margin-top: 20px;	
+}
+
+#phone-content {
+	position: absolute;
+	left: 600px;
+	overflow: hidden;
+}
+
+#phone {
+	
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	background-color: #fd6d35;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.45)), color-stop(50%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	-webkit-box-shadow: inset 0 -1px 0 0 darken(#fd6d35, 9%);
+}
+
+#footer-text {
+	
+}
+
+ul.link-list {
+	margin: 0 0 0 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+ul.link-list li {
+	list-style: none;
+	float: left;
+	margin-left: 22px;
+	display: block;
+}
+
+#contactModal {
+	color: white;
+	text-align: center;
+	background-color: #fd6d35;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.45)), color-stop(50%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
