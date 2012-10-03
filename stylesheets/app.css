@@ -70,6 +70,7 @@ a, a:hover, a:link, a:visited {
 	position: absolute;
 	left: 600px;
 	overflow: hidden;
+	bottom: 0px;
 }
 
 #phone {
