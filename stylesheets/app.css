@@ -26,13 +26,23 @@ body#landing {
 }
 
 body#inner {
-	background: #DCDCDC url('../images/yoin/innerbg.jpg') no-repeat left top;
+	
+	
+	background: #dcdcdc url('../images/yoin/innerbg.jpg') no-repeat left top;
+
+	/*
+	background-color: #DCDCDC;
+	background-image: url('../images/yoin/innerbg.jpg'), -moz-linear-gradient(top, transparent 0%, transparent 10%, rgba(0,0,0,0.05) 65%, rgba(0,0,0,0.1) 100%); 
+	background-image: url('../images/yoin/innerbg.jpg'),  -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(10%,transparent), color-stop(65%,rgba(0,0,0,0.05)), color-stop(100%,rgba(0,0,0,0.1)));  
+	background-repeat: no-repeat;
+	background-position: left top; 
+	*/
+
 }
 
 
 a, a:hover, a:link, a:visited {
 	color: #f2f2f2;
-	//text-decoration: none;
 	font-weight: bold; 
 	text-shadow: 0 -1px 0px rgba(0,0,0,0.4);
 	
@@ -59,15 +69,6 @@ a, a:hover, a:link, a:visited {
 	-webkit-box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.8);
 	-moz-box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.8);
 	box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.8);
-
-
-	
-	/*
-	background-color: #fd6d35;
-	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%); 
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.45)), color-stop(50%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0))); 
-	-webkit-box-shadow: inset 0 -1px 0 0 darken(#fd6d35, 9%);
-	*/
 }
 
 #header-content {
@@ -75,7 +76,7 @@ a, a:hover, a:link, a:visited {
 }
 
 #brand {
-	padding-top: 5px;
+	padding-top: 6px;
 	padding-bottom: 5px;
 }
 
@@ -118,7 +119,7 @@ a, a:hover, a:link, a:visited {
 }
 
 #video {
-	margin-top: 20px;	
+	margin-top: 80px;	
 }
 
 #phone-content {
@@ -154,14 +155,6 @@ a, a:hover, a:link, a:visited {
 	-moz-box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.8);
 	box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.8);
 	
-
-
-	/*
-	background-color: #fd6d35;
-	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%); 
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.45)), color-stop(50%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0))); 
-	-webkit-box-shadow: inset 0 -1px 0 0 darken(#fd6d35, 9%);
-	*/
 }
 
 #innerfooter {
@@ -178,7 +171,8 @@ a, a:hover, a:link, a:visited {
 }
 
 ul.link-list {
-	margin: 0 0 0 0;
+
+	margin: 3px 0 0 0;
 	padding: 0;
 	list-style: none;
 	overflow: hidden;
@@ -189,6 +183,7 @@ ul.link-list.right {
 }
 
 ul.link-list li {
+
 	list-style: none;
 	float: left;
 	margin-left: 50px;
@@ -196,6 +191,7 @@ ul.link-list li {
 }
 
 #contactModal {
+
 	color: white;
 	text-align: center;
 	background-color: #fd6d35;
@@ -204,7 +200,102 @@ ul.link-list li {
 }
 
 .invisible {
+
 	visibility: hidden;
+}
+
+
+.content-title {
+
+	margin-top: 28px;
+
+}
+
+
+
+
+h1.page-title {
+
+	font-size: 38px;
+	color:#e2845f;
+	text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+	letter-spacing: 1pt;
+
+}
+
+
+p.page-subtitle {
+
+	color:#f2f2f2;
+	text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+	letter-spacing: 1pt;
+
+}
+
+h5.user-name {
+
+	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.65);
+	font-size: 26px;
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+
+p.biography {
+
+	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.65);
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.links a {
+
+	display: inline;
+
+	color:#e2845f;
+	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.65);
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+
+
+}
+
+ .picture-container {
+
+	background-color: white;
+	width: 100%;
+	height: 210px;
+
+	-webkit-box-shadow: 0px 1px 10px 0 rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 1px 10px 0 rgba(0,0,0,0.8);
+	box-shadow: 0px 1px 10px 0 rgba(0,0,0,0.8);
+
+}
+
+
+
+.person {
+
+	padding-bottom: 20px;
+	border-bottom: 1px solid;
+	margin-top: 40px;
+
+	border-bottom: 1px solid #b9b9b9;
+
+	-webkit-box-shadow: 0px 1px 0px 0 white;
+	-moz-box-shadow: 0px 1px 0px 0 white;
+	box-shadow: 0px 1px 0px 0 white;
+}
+
+.person.last {
+
+	border-bottom: none;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 
