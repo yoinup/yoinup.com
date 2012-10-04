@@ -65,9 +65,26 @@ a, a:hover, a:link, a:visited {
 }
 
 #header-content {
-	font-size: 18px;
+	height: 40px;
+}
+
+#brand {
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+.menu {
+	font-size: 18px;
+}
+
+.menu-item {
+	text-align: center;
+	border-left: 1px solid red;
+	line-height: 40px;	
+}
+
+.menu-item:last-child {
+	border-right: 1px solid red;
 }
 
 #content {
