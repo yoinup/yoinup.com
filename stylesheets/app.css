@@ -228,7 +228,7 @@ p.page-subtitle {
 
 	color:#f2f2f2;
 	text-shadow: 0 1px 4px rgba(0,0,0,0.8);
-	letter-spacing: 1pt;
+	letter-spacing: 0.5pt;
 
 }
 
@@ -236,8 +236,22 @@ h5.user-name {
 
 	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.65);
 	font-size: 26px;
-	margin-bottom: 10px;
-	margin-top: 40px;
+	display: inline;
+	letter-spacing: 0.5pt;
+
+}
+
+h5.workstation {
+
+	font-weight: normal;
+	font-style: italic;
+	font-size: 22px;
+	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.65);
+	display: inline;
+	letter-spacing: 0.5pt;
+	
+
+
 }
 
 p.biography {
@@ -262,11 +276,13 @@ p.biography {
 
 }
 
- .picture-container {
+ .picture {
 
 	background-color: white;
 	width: 100%;
 	height: 210px;
+
+	border: 5px solid white;
 
 	-webkit-box-shadow: 0px 1px 10px 0 rgba(0,0,0,0.8);
 	-moz-box-shadow: 0px 1px 10px 0 rgba(0,0,0,0.8);
@@ -298,6 +314,13 @@ p.biography {
 	box-shadow: none;
 }
 
+
+.team-member {
+
+	margin-bottom: 10px; 
+	margin-top:33px;
+
+}
 
 /* -----------------------------------------
    Page Name 1
