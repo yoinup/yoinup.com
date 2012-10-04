@@ -100,10 +100,14 @@ ul.link-list {
 	overflow: hidden;
 }
 
+ul.link-list.right {
+	float: right;
+}
+
 ul.link-list li {
 	list-style: none;
 	float: left;
-	margin-left: 22px;
+	margin-left: 50px;
 	display: block;
 }
 
