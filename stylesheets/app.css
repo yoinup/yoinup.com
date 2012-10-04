@@ -31,8 +31,12 @@ body#inner {
 
 
 a, a:hover, a:link, a:visited {
-	color: white;
-	text-decoration: none;
+	color: #f2f2f2;
+	//text-decoration: none;
+	font-weight: bold; 
+	text-shadow: 0 -1px 0px rgba(0,0,0,0.4);
+	
+}
 }
 
 #wrapper {
@@ -80,13 +84,22 @@ a, a:hover, a:link, a:visited {
 }
 
 .menu-item {
+
 	text-align: center;
-	border-left: 1px solid red;
-	line-height: 40px;	
+	//border-left: 1px solid #ce592b;
+	line-height: 40px;
+
+	-webkit-box-shadow: 1px 0px 0px 0 #CE592B, 2px 0px 0px 0 rgba(255, 255, 255, 0.4);
+	-moz-box-shadow:1px 0px 0px 0 #CE592B, 2px 0px 0px 0 rgba(255, 255, 255, 0.4);
+	box-shadow: 1px 0px 0px 0 #CE592B, 2px 0px 0px 0 rgba(255, 255, 255, 0.4);
+
 }
 
-.menu-item:last-child {
-	border-right: 1px solid red;
+.menu-item:first-child {
+
+	-webkit-box-shadow:  -1px 0px 0px 0 rgba(255, 255, 255, 0.65), -2px 0px 0px 0 #CE592B, 1px 0px 0px 0 #CE592B, 2px 0px 0px 0 rgba(255, 255, 255, 0.4) ;
+	-moz-box-shadow:  -1px 0px 0px 0 rgba(255, 255, 255, 0.65), -2px 0px 0px 0 #CE592B, 1px 0px 0px 0 #CE592B, 2px 0px 0px 0 rgba(255, 255, 255, 0.4);
+	box-shadow:  -1px 0px 0px 0 rgba(255, 255, 255, 0.65), -2px 0px 0px 0 #CE592B, 1px 0px 0px 0 #CE592B, 2px 0px 0px 0 rgba(255, 255, 255, 0.4);
 }
 
 #content {
