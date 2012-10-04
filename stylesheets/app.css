@@ -43,10 +43,25 @@ a, a:hover, a:link, a:visited {
 }
 
 #header {
+
+
 	background-color: #fd6d35;
-	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.45)), color-stop(50%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background-image: url(images/yoin/BG2.png), -moz-linear-gradient(top, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background-image: url(images/yoin/BG2.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.45)), color-stop(50%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+
+	border-top: 1px solid #fec8ae;
+	border-bottom: 1px solid #642e19;
+
+	-webkit-box-shadow: 0 -1px 20px 0 rgba(0, 0, 0, 0.8);
+
+
+	
+	/*
+	background-color: #fd6d35;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%); 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.45)), color-stop(50%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0))); 
 	-webkit-box-shadow: inset 0 -1px 0 0 darken(#fd6d35, 9%);
+	*/
 }
 
 #header-content {
