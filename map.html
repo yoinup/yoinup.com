@@ -65,10 +65,10 @@
             table:'venues',
             column:'created_at',
             steps:100,
-            resolution:8,
+            resolution:2,
             cumulative:true,
             clock:true,
-            fps:32,
+            fps:20,
             fitbounds:true,
             blendmode:'source-over',
             trails:true,
@@ -76,10 +76,27 @@
             cellsize:8
         }
 
+        var TorqueOptionsCheckins = {
+            user:'yoin',
+            table:'checkins',
+            column:'created_at',
+            steps:200,
+            resolution:2,
+            cumulative:false,
+            clock:true,
+            fps:20,
+            fitbounds:true,
+            blendmode:'lighter',
+            trails:true,
+            point_type:'square',
+            cellsize:8
+        }
+
         var torque = null;
         Torque(function (env) {
             Torque.app = new env.app.Instance();
             torque = new Torque.app.addLayer(map, TorqueOptions);
+            torqueCheckins = new Torque.app.addLayer(map, TorqueOptionsCheckins);
             Torque.env = env;
         });
     }
