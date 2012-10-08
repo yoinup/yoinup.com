@@ -59,7 +59,7 @@ a, a:hover, a:link, a:visited {
 #header {
 
 
-	background-color: #fd6d35;
+	background-color: #777;
 	background-image: url(../images/yoin/BG2.png), -moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.3) 60%, rgba(255,255,255,0) 100%); /* FF3.6+ */
 	background-image: url(../images/yoin/BG2.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.6)), color-stop(60%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
 
@@ -72,7 +72,7 @@ a, a:hover, a:link, a:visited {
 }
 
 #header-content {
-	height: 40px;
+	height: 70px;
 }
 
 #brand {
@@ -87,8 +87,9 @@ a, a:hover, a:link, a:visited {
 .menu-item {
 
 	text-align: center;
-	//border-left: 1px solid #ce592b;
-	line-height: 40px;
+	/*border-left: 1px solid #ce592b;*/
+	/*line-height: 70px;*/
+	height: 70px;
 
 	-webkit-box-shadow: 1px 0px 0px 0 #CE592B, 2px 0px 0px 0 rgba(255, 255, 255, 0.4);
 	-moz-box-shadow:1px 0px 0px 0 #CE592B, 2px 0px 0px 0 rgba(255, 255, 255, 0.4);
