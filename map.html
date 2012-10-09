@@ -113,11 +113,29 @@
 						autoplay: false
 				}
 
+				var TorqueOptionsCheckinsHist = {
+						user:'yoin',
+						table:'checkinshist',
+						column:'created_at',
+						steps:90,
+						resolution:4,
+						cumulative:true,
+						clock:true,
+						fps:20,
+						fitbounds:true,
+						blendmode:'lighter',
+						trails:true,
+						point_type:'circle',
+						countby:'count(i.cartodb_id)',
+						cellsize:10,
+				}
+
 				var torque = null;
 				Torque(function (env) {
 						Torque.app = new env.app.Instance();
-						torque = new Torque.app.addLayer(map, TorqueOptions);
+						//torque = new Torque.app.addLayer(map, TorqueOptions);
 						//torqueCheckins = new Torque.app.addLayer(map, TorqueOptionsCheckins);
+						torque = new Torque.app.addLayer(map, TorqueOptionsCheckinsHist);
 						Torque.env = env;
 				});
 		}
