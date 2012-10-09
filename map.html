@@ -5,12 +5,12 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 
 	<title>Yoin</title>
-	
+
 	<!-- Included CSS Files (Uncompressed) -->
 	<!--
 	<link rel="stylesheet" href="stylesheets/foundation.css">
 	-->
-	
+
 	<!-- Included CSS Files (Compressed) -->
 	<link rel="stylesheet" href="stylesheets/foundation.min.css">
 	<link rel="stylesheet" href="stylesheets/app.css">
@@ -21,10 +21,10 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-		
+
 		<link rel="shortcut icon" href="http://cartodb.com/favicon/favicon_32x32.ico" />
 		<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="lib/cartodb.css">
+		<link rel="stylesheet" href="javascripts/torque/lib/cartodb.css">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript" src="javascripts/torque/lib/wax.g.js"></script>
@@ -40,6 +40,7 @@
 		<script type="text/javascript">
 		var gui;
 		function initialize() {
+				$(".map_canvas").show();
 				// initialise the google map
 				var map = new google.maps.Map(document.getElementById('map_canvas'), {
 						center:new google.maps.LatLng(30.95940879245423, -0.609375),
@@ -82,24 +83,26 @@
 						user:'yoin',
 						table:'venues',
 						column:'created_at',
-						steps:20,
-						resolution:10,
+						steps:60,
+						resolution:4,
 						cumulative:true,
 						clock:true,
 						fps:20,
 						fitbounds:true,
-						blendmode:'source-over',
+						blendmode:'lighter',
 						trails:true,
 						point_type:'circle',
-						cellsize:5
+						countby:'count(i.cartodb_id)',
+						cellsize:10,
+						autoplay: false,
 				}
 
 				var TorqueOptionsCheckins = {
 						user:'yoin',
 						table:'checkins',
 						column:'created_at',
-						steps:200,
-						resolution:2,
+						steps:60,
+						resolution:4,
 						cumulative:false,
 						clock:true,
 						fps:20,
@@ -107,7 +110,8 @@
 						blendmode:'lighter',
 						trails:true,
 						point_type:'square',
-						cellsize:8
+						cellsize:10,
+						autoplay: false
 				}
 
 				var torque = null;
