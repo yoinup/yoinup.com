@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+	<title>Yoin</title>
+	
+	<!-- Included CSS Files (Uncompressed) -->
+	<!--
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	-->
+	
+	<!-- Included CSS Files (Compressed) -->
+	<link rel="stylesheet" href="stylesheets/foundation.min.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<script src="javascripts/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+		
+		<link rel="shortcut icon" href="http://cartodb.com/favicon/favicon_32x32.ico" />
+		<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="lib/cartodb.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="javascripts/torque/lib/wax.g.js"></script>
+		<script type="text/javascript" src="javascripts/torque/lib/cartodb-gmapsv3.js"></script>
+		<script type="text/javascript" src="javascripts/torque/lib/dat.gui.min.js"></script>
+		<script type="text/javascript" src="javascripts/torque/lib/underscore-min.js"></script>
+		<script type="text/javascript" src="javascripts/torque/lib/backbone.js"></script>
+		<script type="text/javascript" src="javascripts/torque/lib/class.js"></script>
+		<script type="text/javascript" src="javascripts/torque/lib/backbone.cartodb.js"></script>
+		<script type="text/javascript" src="javascripts/torque/src/canvas_tile_layer.js"></script>
+		<script type="text/javascript" src="javascripts/torque/src/grid_layer.js"></script>
+		<script type="text/javascript" src="javascripts/torque/src/torque.js"></script>
+		<script type="text/javascript">
+		var gui;
+		function initialize() {
+				// initialise the google map
+				var map = new google.maps.Map(document.getElementById('map_canvas'), {
+						center:new google.maps.LatLng(30.95940879245423, -0.609375),
+						zoom:2,
+						mapTypeId:google.maps.MapTypeId.SATELLITE,
+						mapTypeControl:false,
+						minZoom:1
+				});
+
+				var map_style = {};
+				map_style.google_maps_customization_style = [
+						{
+								stylers:[
+										{ invert_lightness:true },
+										{ weight:1 },
+										{ saturation:-100 },
+										{ lightness:-40 }
+								]
+						},
+						{
+								elementType:"labels",
+								stylers:[
+										{ visibility:"simplified" }
+								]
+						}
+				];
+
+				var Soft = function () {
+						this.Soft = function () {
+								map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+								map.setOptions({styles:map_style.google_maps_customization_style});
+						}
+				}
+
+
+				map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+				map.setOptions({styles:map_style.google_maps_customization_style});
+
+				var TorqueOptions = {
+						user:'yoin',
+						table:'venues',
+						column:'created_at',
+						steps:20,
+						resolution:10,
+						cumulative:true,
+						clock:true,
+						fps:20,
+						fitbounds:true,
+						blendmode:'source-over',
+						trails:true,
+						point_type:'circle',
+						cellsize:5
+				}
+
+				var TorqueOptionsCheckins = {
+						user:'yoin',
+						table:'checkins',
+						column:'created_at',
+						steps:200,
+						resolution:2,
+						cumulative:false,
+						clock:true,
+						fps:20,
+						fitbounds:true,
+						blendmode:'lighter',
+						trails:true,
+						point_type:'square',
+						cellsize:8
+				}
+
+				var torque = null;
+				Torque(function (env) {
+						Torque.app = new env.app.Instance();
+						torque = new Torque.app.addLayer(map, TorqueOptions);
+						//torqueCheckins = new Torque.app.addLayer(map, TorqueOptionsCheckins);
+						Torque.env = env;
+				});
+		}
+		</script>
+</head>
+<body onload="initialize()">
+		<div id="header">
+				<div id="header-content" class="row">
+						<div id="brand" class="three columns">
+								<a href="/"><img src="images/yoin/yoin_logo.png" border="0" /></a>
+						</div>
+						<div class="eight columns offset-by-one menu">
+								<div class="three columns menu-item">
+										<a href="#">
+												<img src="images/yoin/home_icon.png" border="0" /><br />
+												Home
+										</a>
+								</div>
+								<div class="three columns menu-item">
+										<a href="#">
+												<img src="images/yoin/register_icon.png" border="0" /><br />
+												Register
+										</a>
+								</div>
+								<div class="three columns menu-item">
+										<a href="#">
+												<img src="images/yoin/analytics_icon.png" border="0" /><br />
+												Analytics
+										</a>
+								</div>
+								<div class="three columns menu-item">
+										<a href="#">
+												<img src="images/yoin/how_to_icon.png" border="0" /><br />
+												How to
+										</a>
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<div id="map_canvas"></div>
+		<div class="torque_time"></div>
+		<a class="cartodb_logo" href="http://www.cartodb.com" target="_blank">CartoDB</a>
+
+</body>
+</html>
