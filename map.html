@@ -82,8 +82,8 @@
 						user:'yoin',
 						table:'venues',
 						column:'created_at',
-						steps:100,
-						resolution:2,
+						steps:20,
+						resolution:10,
 						cumulative:true,
 						clock:true,
 						fps:20,
@@ -91,7 +91,7 @@
 						blendmode:'source-over',
 						trails:true,
 						point_type:'circle',
-						cellsize:8
+						cellsize:5
 				}
 
 				var TorqueOptionsCheckins = {
@@ -114,7 +114,7 @@
 				Torque(function (env) {
 						Torque.app = new env.app.Instance();
 						torque = new Torque.app.addLayer(map, TorqueOptions);
-						torqueCheckins = new Torque.app.addLayer(map, TorqueOptionsCheckins);
+						//torqueCheckins = new Torque.app.addLayer(map, TorqueOptionsCheckins);
 						Torque.env = env;
 				});
 		}
