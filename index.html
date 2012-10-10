@@ -42,7 +42,7 @@
 				</div>
 				<div class="eight columns offset-by-one menu">
 					<div class="three columns menu-item">
-						<a href="#">
+						<a href="map.html">
 							<img src="images/yoin/map_icon.png" border="0" /><br />
 							Map
 						</a>
@@ -84,9 +84,9 @@
 			</div>	
 			<div id="phone-content" class="eight columns">
 				<div id="phone" class="panel">
-					<!--<div id="featured">-->
-						<!--<img src="images/yoin/iphone.png" />-->
-					<!--</div>-->
+					<div id="featured_">
+						<img src="images/yoin/iphone.png" alt="Yoin iPhone Step 1" />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -104,7 +104,7 @@
 			</div>
 			<div class="six columns offset-by-two">
 				<div class="six columns">
-					<a href="#">
+					<a href="team.html">
 						
 						<div class="footer-links">
 
@@ -117,7 +117,7 @@
 					</a>
 				</div>
 				<div class="six columns">
-					<a href="#">
+					<a href="#" data-reveal-id="contactModal">
 
 						<div class="footer-links">
 
@@ -134,12 +134,17 @@
 		</div>
 	</div>
 	
-	<div id="contactModal" class="reveal-modal">
 
+	<div id="contactModal" class="reveal-modal x-large">
 		<img src="images/yoin/contact_brand.png" border="0" width="100px" heigth="100px" />
-		<p class="adress"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus dictum purus vel lobortis. Aenean vehicula ultrices nibh. In eleifend </p>
-		<a class="close-reveal-modal">×</a>
-
+		<p class="address">Do you have an idea for a new feature, an exciting new partnership or do you
+simply want to say hello? Please get in touch! We look forward to hearing from you.</p>
+		<br /><br />
+		<p>
+			For general question: <strong>hello@yoinup.com</strong><br />
+			Customer service: <strong>support@yoinup.com</strong>
+		</div>
+		<!--<a class="close-reveal-modal">×</a>-->
 	</div>
 	
 	
@@ -167,11 +172,11 @@
 
 
 	<script type="text/javascript">
-		$(window).load(function() {
+		/*$(window).load(function() {
 			$('#featured').orbit({
-				animation: 'fade',									// fade, horizontal-slide, vertical-slide, horizontal-push
-				animationSpeed: 800,								// how fast animtions are
-				timer: true,												// true or false to have the timer
+				animation: 'horizontal-slide',									// fade, horizontal-slide, vertical-slide, horizontal-push
+				animationSpeed: 1000,								// how fast animtions are
+				timer: false,												// true or false to have the timer
 				resetTimerOnClick: false,						// true resets the timer instead of pausing slideshow progress
 				advanceSpeed: 4000,									// if timer is enabled, time between transitions 
 				pauseOnHover: true,								// if you hover pauses the slider
@@ -187,7 +192,7 @@
 				afterSlideChange: function(){},			// empty function 
 				fluid: true													// or set a aspect ratio for content slides (ex: '4x3') 
 			});
-		});
+		});*/
 	</script>
 
 

@@ -54,7 +54,7 @@
 				map_style.google_maps_customization_style = [
 						{
 								stylers:[
-										{ invert_lightness:true },
+										{ invert_lightness:false },
 										{ weight:1 },
 										{ saturation:-100 },
 										{ lightness:-40 }
@@ -143,37 +143,37 @@
 </head>
 <body onload="initialize()">
 		<div id="header">
-				<div id="header-content" class="row">
-						<div id="brand" class="three columns">
-								<a href="/"><img src="images/yoin/yoin_logo.png" border="0" /></a>
-						</div>
-						<div class="eight columns offset-by-one menu">
-								<div class="three columns menu-item">
-										<a href="#">
-												<img src="images/yoin/home_icon.png" border="0" /><br />
-												Home
-										</a>
-								</div>
-								<div class="three columns menu-item">
-										<a href="#">
-												<img src="images/yoin/register_icon.png" border="0" /><br />
-												Register
-										</a>
-								</div>
-								<div class="three columns menu-item">
-										<a href="#">
-												<img src="images/yoin/analytics_icon.png" border="0" /><br />
-												Analytics
-										</a>
-								</div>
-								<div class="three columns menu-item">
-										<a href="#">
-												<img src="images/yoin/how_to_icon.png" border="0" /><br />
-												How to
-										</a>
-								</div>
-						</div>
+			<div id="header-content" class="row">
+				<div id="brand" class="three columns">
+					<a href="/"><img class="brand" src="images/yoin/yoin_logo.png" border="0" /></a>
 				</div>
+				<div class="eight columns offset-by-one menu">
+					<div class="three columns menu-item">
+						<a href="map.html">
+							<img src="images/yoin/map_icon.png" border="0" /><br />
+							Map
+						</a>
+					</div>
+					<div class="three columns menu-item">
+						<a href="#">
+							<img src="images/yoin/register_icon.png" border="0" /><br />
+							Register
+						</a>
+					</div>
+					<div class="three columns menu-item">
+						<a href="#">
+							<img src="images/yoin/analytics_icon.png" border="0" /><br />
+							Analytics
+						</a>
+					</div>
+					<div class="three columns menu-item">
+						<a href="#">
+							<img src="images/yoin/how_to_icon.png" border="0" /><br />
+							How to
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div id="map_canvas"></div>

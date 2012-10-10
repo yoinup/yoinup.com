@@ -1,7 +1,7 @@
 /* Artfully masterminded by ZURB  */
 
 /* -------------------------------------------------- 
-   Table of Contents
+	 Table of Contents
 -----------------------------------------------------
 :: Shared Styles
 :: Page Name 1
@@ -10,7 +10,7 @@
 
 
 /* -----------------------------------------
-   Shared Styles
+	 Shared Styles
 ----------------------------------------- */
 
 * {
@@ -22,7 +22,7 @@ html, body {
 }
 
 body#landing {
-	background: #000 url('../images/yoin/bg.jpg');
+	background: #000 url('../images/yoin/bg_city.jpg');
 }
 
 body#inner {
@@ -113,8 +113,8 @@ a, a:hover, a:link, a:visited {
 
 #logo-vid-button-content {
 	/*margin-left: auto;
-  margin-right: auto;*/
-  text-align: center;
+	margin-right: auto;*/
+	text-align: center;
 }
 
 #logo-with-slogan {
@@ -134,17 +134,24 @@ a, a:hover, a:link, a:visited {
 	background-color: white;
 	margin-top: 30px;
 
-	box-shadow: inset 3px 3px 8px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: inset 3px 3px 8px 0px rgba(0, 0, 0, 0.6);
 	-webkit-box-shadow: inset 3px 3px 8px 0 rgba(0, 0, 0, 0.6);
 	-moz-box-shadow:inset inset 3px 3px 8px 0 rgba(0, 0, 0, 0.6);
 
-
 }
 
-#phone {
-
-	overflow: hidden;
+#featured_ { 
+	height: 550px !important;
+	width: 500px;
 }
+
+#featured_ img {
+	height: 560px;
+	width: 450px;
+	margin-left: 70px;
+}
+
+
 
 #footer {
 	width: 100%;
@@ -161,15 +168,6 @@ a, a:hover, a:link, a:visited {
 	-webkit-box-shadow: inset 0 -1px 15px 0 rgba(0, 0, 0, 0.9);
 	-moz-box-shadow:inset 0 -1px 15px 0 rgba(0, 0, 0, 0.9);
 	
-}
-
-#innerfooter {
-	width: 100%;
-	height: 30px;
-	background-color: #fd6d35;
-	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.45)), color-stop(50%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-	-webkit-box-shadow: inset 0 -1px 0 0 darken(#fd6d35, 9%);
 }
 
 #footer-content {
@@ -217,7 +215,7 @@ ul.link-list li {
 
 .content-title {
 
-	margin-top: 52px;
+	margin-top: 25px;
 
 }
 
@@ -273,7 +271,7 @@ p.biography {
 	margin-bottom: 10px;
 }
 
-p.adress {
+p.address {
 
 	color: #f2f2f2;
 	font-size: 16px;
@@ -393,14 +391,14 @@ p.adress {
 }
 
 /* -----------------------------------------
-   Page Name 1
+	 Page Name 1
 ----------------------------------------- */
 
 
 
 
 /* -----------------------------------------
-   Page Name 2
+	 Page Name 2
 ----------------------------------------- */
 
 
