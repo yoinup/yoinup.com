@@ -40,6 +40,28 @@ body#inner {
 
 }
 
+
+
+body#half-inner {
+	
+	
+	background: #dcdcdc url('../images/yoin/innerbg_02.jpg') no-repeat left top;
+
+	/*
+	background-color: #DCDCDC;
+	background-image: url('../images/yoin/innerbg.jpg'), -moz-linear-gradient(top, transparent 0%, transparent 10%, rgba(0,0,0,0.05) 65%, rgba(0,0,0,0.1) 100%); 
+	background-image: url('../images/yoin/innerbg.jpg'),  -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(10%,transparent), color-stop(65%,rgba(0,0,0,0.05)), color-stop(100%,rgba(0,0,0,0.1)));  
+	background-repeat: no-repeat;
+	background-position: left top; 
+	*/
+
+}
+
+
+
+
+
+
 body#inner-blank {
 
 	background-color: #DCDCDC;
@@ -238,6 +260,7 @@ h1.page-title {
 }
 
 
+
 p.page-subtitle {
 
 	color:#f2f2f2;
@@ -266,6 +289,28 @@ h5.workstation {
 	display: inline;
 	letter-spacing: 0.5pt;
 	
+
+
+}
+
+
+
+h5.faq-subtitle {
+
+	font-weight: normal;
+	font-style: italic;
+	font-size: 32px;
+	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.65);
+	letter-spacing: 0.5pt;
+	margin-top: 40px;
+
+
+}
+
+
+h5.faq-subtitle.first {
+
+	margin-top: 70px;
 
 
 }
@@ -342,6 +387,37 @@ p.address {
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
+
+
+
+.faq {
+
+	padding-bottom: 30px;
+	border-bottom: 1px solid;
+	margin-top: 15px;
+
+	border-bottom: 1px solid #b9b9b9;
+
+	-webkit-box-shadow: 0px 1px 0px 0 white;
+	-moz-box-shadow: 0px 1px 0px 0 white;
+	box-shadow: 0px 1px 0px 0 white;
+}
+
+
+.faq.first {
+
+	margin-top: -15px;
+
+	
+}
+
+
+
+
+
+
+
+
 
 
 .team-member {
