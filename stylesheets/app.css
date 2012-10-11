@@ -40,6 +40,12 @@ body#inner {
 
 }
 
+body#inner-blank {
+
+	background-color: #DCDCDC;
+
+}
+
 
 a, a:hover, a:link, a:visited {
 	color: #f2f2f2;
