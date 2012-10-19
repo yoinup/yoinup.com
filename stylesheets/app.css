@@ -524,16 +524,18 @@ p.address {
 
 	
 	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.65);
-	font-size: 20px;
+	color:black;
+	font-size: 18px;
 	display: inline;
 	letter-spacing: 0.5pt;
-	margin-bottom: 25px;
+	//margin-bottom: 5px;
+	
 
 }
 
 .store-icon {
 
-	margin-top: 4%;
+	margin-top: 3%;
 }
 
 
@@ -549,11 +551,13 @@ p.address {
 .under-construction {
 
 	
+	font-family: 'Yellowtail', cursive;
+
 	margin-top: 30%;
 	text-align: center;
 
 	font-size: 80px;
-	color:#e1612f;
+	
 	text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4), 0 1px 0px rgba(255, 255, 255, 0.2);
 	font-style: italic;
 	font-weight: bold;
