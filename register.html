@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html>
 <head>
-	<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 
-	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
+	<title>Register - Yoin</title>
 
-	<title>Yoin</title>
-	
 	<!-- Included CSS Files (Uncompressed) -->
 	<!--
 	<link rel="stylesheet" href="stylesheets/foundation.css">
 	-->
-	
+
 	<!-- Included CSS Files (Compressed) -->
 	<link rel="stylesheet" href="stylesheets/foundation.min.css">
 	<link rel="stylesheet" href="stylesheets/app.css">
 
 	<script src="javascripts/modernizr.foundation.js"></script>
 
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,700' rel='stylesheet' type='text/css'>	
-	
 	<!-- IE Fix for HTML5 Tags -->
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
+		<link rel="shortcut icon" href="http://cartodb.com/favicon/favicon_32x32.ico" />
+		<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="javascripts/torque/lib/cartodb.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
     <script type="text/javascript">
 
@@ -44,11 +40,8 @@
       })();
 
     </script>
-
 </head>
-<body id="landing">
-
-	<div id="wrapper">
+<body>
 		<div id="header">
 			<div id="header-content" class="row">
 				<div id="brand" class="three columns">
@@ -82,31 +75,15 @@
 				</div>
 			</div>
 		</div>
+
+
 		<div id="content" class="row">
-			<div id="logo-vid" class="four columns">
-				<div id="logo-vid-button-content" class="panel">
-					<div id="logo-with-slogan">
-						<img src="images/yoin/invite_easy_letter.png" border="0" />
-					</div>
-					<div id="video">
-						<a href="#"><img src="images/yoin/video_icon.png" border="0" /></a>
-					</div>
-					<div id="get-the-app">
-						<!--<a href="#"><img src="images/yoin/get_the_app_icon.png" border="0" /></a>-->
-					</div>
-				</div>
-			</div>	
-			<div id="phone-content" class="eight columns">
-				<div id="phone" class="panel">
-					<div id="featured_">
-						<img src="images/yoin/iphone.png" alt="Yoin iPhone Step 1" />
-					</div>
-				</div>
+			<div class="twelve columns">
 			</div>
 		</div>
-	</div>
 
-	<div id="footer">
+
+		<div id="footer">
 		<div id="footer-content" class="row">
 			<div class="four columns">
 				<div class="six columns">
@@ -131,7 +108,7 @@
 					</a>
 				</div>
 				<div class="six columns">
-					<a href="#" data-reveal-id="meContactModal">
+					<a href="#" data-reveal-id="registerContactModal">
 
 						<div class="footer-links">
 
@@ -149,7 +126,7 @@
 	</div>
 	
 
-	<div id="meContactModal" class="reveal-modal x-large contactModal">
+	<div id="registerContactModal" class="reveal-modal x-large contactModal">
 		<img src="images/yoin/contact_brand.png" border="0" width="100px" heigth="100px" />
 		<p class="address">Do you have an idea for a new feature, an exciting new partnership or do you
 simply want to say hello? Please get in touch! We look forward to hearing from you.</p>
@@ -160,55 +137,31 @@ simply want to say hello? Please get in touch! We look forward to hearing from y
 		</div>
 		<!--<a class="close-reveal-modal">×</a>-->
 	</div>
-	
-	
+
 	<!-- Included JS Files (Uncompressed) -->
 	<!--
 	
 	<script src="javascripts/modernizr.foundation.js"></script>
+	
+	<script src="javascripts/jquery.js"></script>
+	
+	<script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+	
+	<script src="javascripts/jquery.foundation.reveal.js"></script>
+	
+	<script src="javascripts/jquery.foundation.orbit.js"></script>
 	
 	<script src="javascripts/jquery.foundation.navigation.js"></script>
 	
 	<script src="javascripts/jquery.foundation.tabs.js"></script>
 	
 	-->
-
-	<script src="javascripts/jquery.js"></script>
-	<script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-	<script src="javascripts/jquery.foundation.reveal.js"></script>
-	<script src="javascripts/jquery.foundation.orbit.js"></script>
 	
 	<!-- Included JS Files (Compressed) -->
 	<script src="javascripts/foundation.min.js"></script>
 	
 	<!-- Initialize JS Plugins -->
 	<script src="javascripts/app.js"></script>
-
-
-	<script type="text/javascript">
-		/*$(window).load(function() {
-			$('#featured').orbit({
-				animation: 'horizontal-slide',									// fade, horizontal-slide, vertical-slide, horizontal-push
-				animationSpeed: 1000,								// how fast animtions are
-				timer: false,												// true or false to have the timer
-				resetTimerOnClick: false,						// true resets the timer instead of pausing slideshow progress
-				advanceSpeed: 4000,									// if timer is enabled, time between transitions 
-				pauseOnHover: true,								// if you hover pauses the slider
-				startClockOnMouseOut: false,				// if clock should start on MouseOut
-				startClockOnMouseOutAfter: 1000,		// how long after MouseOut should the timer start again
-				directionalNav: true,								// manual advancing directional navs
-				captions: false,											// do you want captions?
-				captionAnimation: 'fade',						// fade, slideOpen, none
-				captionAnimationSpeed: 800,					// if so how quickly should they animate in
-				bullets: false,											// true or false to activate the bullet navigation
-				bulletThumbs: false,								// thumbnails for the bullets
-				bulletThumbLocation: '',						// location from this file where thumbs will be
-				afterSlideChange: function(){},			// empty function 
-				fluid: true													// or set a aspect ratio for content slides (ex: '4x3') 
-			});
-		});*/
-	</script>
-
 
 </body>
 </html>
