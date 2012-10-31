@@ -25,6 +25,10 @@ body#landing {
 	background: #000 url('../images/yoin/bg_city.jpg');
 }
 
+body#error {
+	background: #000 url('../images/yoin/bg_error.jpg');
+}
+
 body#inner {
 	
 	
@@ -146,7 +150,7 @@ a, a:hover, a:link, a:visited {
 }
 
 #logo-with-slogan {
-	margin-top: 110px;
+	margin-top: 180px; /*With gettheapp 110px*/
 }
 
 #video {
@@ -154,17 +158,18 @@ a, a:hover, a:link, a:visited {
 }
 
 #get-the-app {
-	margin-top: 50px;	
+	/*margin-top: 50px;*/
 }
 
 #phone-content {
 	height: 550px;
-	background-color: white;
+	overflow: hidden;
 	margin-top: 30px;
 
+	/*background-color: white;
 	box-shadow: inset 3px 3px 8px 0px rgba(0, 0, 0, 0.6);
 	-webkit-box-shadow: inset 3px 3px 8px 0 rgba(0, 0, 0, 0.6);
-	-moz-box-shadow:inset inset 3px 3px 8px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow:inset inset 3px 3px 8px 0 rgba(0, 0, 0, 0.6);*/
 
 }
 
@@ -176,25 +181,29 @@ a, a:hover, a:link, a:visited {
 #featured_ img {
 	height: 560px;
 	width: 450px;
-	margin-left: 70px;
+	margin-left: 120px; /*70px*/
 }
 
 
 
 #footer {
 	width: 100%;
-	height: 150px;
+	min-height: 150px;
 
 	background-color: #ddd;
 	
 	/*background-image: url(../images/yoin/BG2.png), -moz-linear-gradient(top, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.15) 55%, rgba(255,255,255,0) 100%);
 	background-image:  url(../images/yoin/BG2.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.35)), color-stop(55%,rgba(255, 255, 255, 0.15)), color-stop(100%,rgba(255, 255, 255, 0)));*/
 
-	border-top: 2px solid #909090;
+	/*border-top: 1px solid #909090;
 
 	box-shadow: inset 0 -1px 15px 0 rgba(0, 0, 0, 0.9);
 	-webkit-box-shadow: inset 0 -1px 15px 0 rgba(0, 0, 0, 0.9);
-	-moz-box-shadow:inset 0 -1px 15px 0 rgba(0, 0, 0, 0.9);
+	-moz-box-shadow:inset 0 -1px 15px 0 rgba(0, 0, 0, 0.9);*/
+
+	-webkit-box-shadow: 0 -5px 30px 0 rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 -5px 30px 0 rgba(0, 0, 0, 0.8);
+	box-shadow: 0 -5px 30px 0 rgba(0, 0, 0, 0.8);
 	
 }
 
@@ -222,7 +231,7 @@ ul.link-list li {
 	display: block;
 }
 
-#contactModal {
+.contactModal {
 
 	color: white;
 	text-align: center;
@@ -507,6 +516,52 @@ p.address {
 
 	width: 38%;
 	text-align: center;
+
+}
+
+
+.coming-soon {
+
+	
+	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.65);
+	color:black;
+	font-size: 18px;
+	display: inline;
+	letter-spacing: 0.5pt;
+	//margin-bottom: 5px;
+	
+
+}
+
+.store-icon {
+
+	margin-top: 3%;
+}
+
+
+.danger {
+
+
+	margin-top:45%;
+	text-align: center;
+
+}
+
+
+.under-construction {
+
+	
+	font-family: 'Yellowtail', cursive;
+
+	margin-top: 30%;
+	text-align: center;
+
+	font-size: 80px;
+	
+	text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4), 0 1px 0px rgba(255, 255, 255, 0.2);
+	font-style: italic;
+	font-weight: bold;
+
 
 }
 
