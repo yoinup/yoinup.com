@@ -22,7 +22,12 @@ html, body {
 }
 
 body#landing {
+  height: 100%;
+  width: 100%;
 	background: #000 url('../images/yoin/bg_city.jpg');
+	background-size: cover;
+  background-repeat:no-repeat;
+  background-position:50% 50%;
 }
 
 body#error {
@@ -162,9 +167,12 @@ a, a:hover, a:link, a:visited {
 }
 
 #phone-content {
+  position: absolute;
+  bottom: 0px;
 	height: 550px;
 	overflow: hidden;
 	margin-top: 30px;
+	margin-left: 200px;
 
 	/*background-color: white;
 	box-shadow: inset 3px 3px 8px 0px rgba(0, 0, 0, 0.6);
