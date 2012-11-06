@@ -171,7 +171,7 @@
 			
 			}
 
-			this.isAnimating = true;
+			this.isAnimating = false;
 
 			var self = this,
 				$currentSlide = this.$slides.eq( this.current );

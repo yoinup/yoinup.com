@@ -100,7 +100,7 @@ body {
 
 .sl .gettheapp {
 	position: absolute;
-	bottom: 20%;
+	bottom: 40%;
 	left: 30%;
 	margin: 0 0 0 -130px;
 }
@@ -110,6 +110,24 @@ body {
 	bottom: -10px;
 	left: 50%;
 	margin: 0 0 0 -50px;
+}
+
+.sl .footer-landing {
+  position: absolute;
+	bottom: 10px;
+	left: 30%;
+	margin: 0 0 0 -130px;
+}
+
+.sl .footer-landing .footer-item {
+  float: left;
+  margin-right: 20px;
+}
+
+.sl .footer-landing .footer-item a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .sl .sl-slide h2 {
@@ -223,39 +241,6 @@ body {
 
 
 
-
-/* Animations for content elements */
-
-.sl-trans-elems .iphone{
-	-webkit-animation: moveUp 1s ease-in-out both;
-	-moz-animation: moveUp 1s ease-in-out both;
-	-o-animation: moveUp 1s ease-in-out both;
-	-ms-animation: moveUp 1s ease-in-out both;
-	animation: moveUp 1s ease-in-out both;
-}
-.sl-trans-elems .claim{
-	-webkit-animation: fadeIn 0.5s linear 0.5s both;
-	-moz-animation: fadeIn 0.5s linear 0.5s both;
-	-o-animation: fadeIn 0.5s linear 0.5s both;
-	-ms-animation: fadeIn 0.5s linear 0.5s both;
-	animation: fadeIn 0.5s linear 0.5s both;
-}
-.sl-trans-back-elems .iphone{
-	-webkit-animation: fadeOut 1s ease-in-out both;
-	-moz-animation: fadeOut 1s ease-in-out both;
-	-o-animation: fadeOut 1s ease-in-out both;
-	-ms-animation: fadeOut 1s ease-in-out both;
-	animation: fadeOut 1s ease-in-out both;
-}
-.sl-trans-back-elems .claim{
-	-webkit-animation: fadeOut 0.5s linear both;
-	-moz-animation: fadeOut 0.5s linear both;
-	-o-animation: fadeOut 0.5s linear both;
-	-ms-animation: fadeOut 0.5s linear both;
-	animation: fadeOut 0.5s linear both;
-}
-
-
 /*BEGIN GENERAL*/
 
 
@@ -298,17 +283,17 @@ body {
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	background: #fff;
-	-webkit-backface-visibility: hidden;
+	/*-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-o-backface-visibility: hidden;
 	-ms-backface-visibility: hidden;
-	backface-visibility: hidden;
+	backface-visibility: hidden;*/
 	opacity : 1;
 }
 
 /* Horizontal slice */
 
-.sl-slide-horizontal .sl-content-slice {
+/*.sl-slide-horizontal .sl-content-slice {
 	width: 100%;
 	height: 50%;
 	left: -200px;
@@ -327,11 +312,11 @@ body {
 .sl-slide-horizontal .sl-content-slice:nth-child(2) {
 	top: 50%;
 	padding: 0px 200px 200px 200px;
-}
+}*/
 
 /* Vertical slice */
 
-.sl-slide-vertical .sl-content-slice {
+/*.sl-slide-vertical .sl-content-slice {
 	width: 50%;
 	height: 100%;
 	top: -200px;
@@ -350,7 +335,7 @@ body {
 .sl-slide-vertical .sl-content-slice:nth-child(2) {
 	left: 50%;
 	padding: 200px 200px 200px 0px;
-}
+}*/
 
 /* Content wrapper */
 /* Width and height is set dynamically */
@@ -382,6 +367,36 @@ body {
 
 
 
+/* Animations for content elements */
+
+.sl-trans-elems .iphone{
+	-webkit-animation: moveUp 1s ease-in-out both;
+	-moz-animation: moveUp 1s ease-in-out both;
+	-o-animation: moveUp 1s ease-in-out both;
+	-ms-animation: moveUp 1s ease-in-out both;
+	animation: moveUp 1s ease-in-out both;
+}
+.sl-trans-elems .claim{
+	-webkit-animation: fadeIn 0.5s linear 0.5s both;
+	-moz-animation: fadeIn 0.5s linear 0.5s both;
+	-o-animation: fadeIn 0.5s linear 0.5s both;
+	-ms-animation: fadeIn 0.5s linear 0.5s both;
+	animation: fadeIn 0.5s linear 0.5s both;
+}
+.sl-trans-back-elems .iphone{
+	-webkit-animation: fadeOut 1s ease-in-out both;
+	-moz-animation: fadeOut 1s ease-in-out both;
+	-o-animation: fadeOut 1s ease-in-out both;
+	-ms-animation: fadeOut 1s ease-in-out both;
+	animation: fadeOut 1s ease-in-out both;
+}
+.sl-trans-back-elems .claim{
+	-webkit-animation: fadeOut 0.5s linear both;
+	-moz-animation: fadeOut 0.5s linear both;
+	-o-animation: fadeOut 0.5s linear both;
+	-ms-animation: fadeOut 0.5s linear both;
+	animation: fadeOut 0.5s linear both;
+}
 
 
 @-webkit-keyframes roll{
