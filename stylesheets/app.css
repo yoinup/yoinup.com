@@ -38,6 +38,7 @@ body#inner {
 	
 	
 	background: #dcdcdc url('../images/yoin/innerbg.jpg') no-repeat left top;
+	//background: black;
 
 	/*
 	background-color: #DCDCDC;
@@ -610,6 +611,47 @@ p.address {
   color:#000;
   text-decoration: none;
   text-shadow: 0px 0px 0px;
+}
+
+
+.pattern-title {
+
+	background-image: url('../images/yoin/crossed_stripes.png');  
+	background-repeat: repeat;
+
+}
+
+.background-pattern {
+
+
+/*
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.4) 0%, rgba(247,247,247,0.25) 30%, rgba(229,229,229,0) 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(30%,rgba(247,247,247,0.25)), color-stop(100%,rgba(229,229,229,0))); 
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(247,247,247,0.25) 30%,rgba(229,229,229,0) 100%); 
+background: -o-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(247,247,247,0.25) 30%,rgba(229,229,229,0) 100%); 
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(247,247,247,0.25) 30%,rgba(229,229,229,0) 100%); 
+background: linear-gradient(to bottom,  rgba(255,255,255,0.4) 0%,rgba(247,247,247,0.25) 30%,rgba(229,229,229,0) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ffffff', endColorstr='#00e5e5e5',GradientType=0 ); 
+*/
+
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.45))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#73000000',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+
+
+.expand {
+
+	
+width: 100%;
+
 }
 
 
