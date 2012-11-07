@@ -316,7 +316,7 @@ body {
 
 /* Vertical slice */
 
-/*.sl-slide-vertical .sl-content-slice {
+.sl-slide-vertical .sl-content-slice {
 	width: 50%;
 	height: 100%;
 	top: -200px;
@@ -335,7 +335,7 @@ body {
 .sl-slide-vertical .sl-content-slice:nth-child(2) {
 	left: 50%;
 	padding: 200px 200px 200px 0px;
-}*/
+}
 
 /* Content wrapper */
 /* Width and height is set dynamically */

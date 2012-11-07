@@ -205,7 +205,7 @@
 				configData = $movingSlide.data(),
 				config = {};
 			
-			config.orientation = configData.orientation || 'horizontal',
+			config.orientation = configData.orientation || 'vertical',
 			config.slice1angle = configData.slice1Rotation || 0,
 			config.slice1scale = configData.slice1Scale || 1,
 			config.slice2angle = configData.slice2Rotation || 0,
