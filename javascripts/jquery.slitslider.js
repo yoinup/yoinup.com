@@ -214,9 +214,11 @@
 			this._validateValues( config );
 			
 			var cssStyle = config.orientation === 'horizontal' ? {
-					marginTop : -this.size.height / 2
+					//marginTop : -this.size.height / 3
+					marginTop : 0
 				} : {
-					marginLeft : -this.size.width / 2
+					//marginLeft : -this.size.width / 3
+					marginLeft : 0
 				},
 				// default slide's slices style
 				resetStyle = {
