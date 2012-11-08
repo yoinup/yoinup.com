@@ -37,16 +37,15 @@ body#error {
 body#inner {
 	
 	
-	background: #dcdcdc url('../images/yoin/innerbg.jpg') no-repeat left top;
-	//background: black;
+	//background: #dcdcdc url('../images/yoin/innerbg.jpg') no-repeat left top;
 
-	/*
+	
 	background-color: #DCDCDC;
-	background-image: url('../images/yoin/innerbg.jpg'), -moz-linear-gradient(top, transparent 0%, transparent 10%, rgba(0,0,0,0.05) 65%, rgba(0,0,0,0.1) 100%); 
-	background-image: url('../images/yoin/innerbg.jpg'),  -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(10%,transparent), color-stop(65%,rgba(0,0,0,0.05)), color-stop(100%,rgba(0,0,0,0.1)));  
-	background-repeat: no-repeat;
-	background-position: left top; 
-	*/
+	background-image: -moz-linear-gradient(top, transparent 0%, transparent 10%, rgba(0,0,0,0.05) 65%, rgba(0,0,0,0.1) 100%); 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(10%,transparent), color-stop(65%,rgba(0,0,0,0.05)), color-stop(100%,rgba(0,0,0,0.1)));  
+	//background-repeat: no-repeat;
+	//background-position: left top; 
+	
 
 }
 
@@ -276,7 +275,9 @@ ul.link-list li {
 
 .content-title {
 
-	margin-top: 25px;
+	//margin-top: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 
 }
 
@@ -702,7 +703,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 
 	width: 100%;
+	padding: 0px;
+	margin: 0px;
 
+
+}
+
+
+.fondo {
+
+
+	background-color: #DCDCDC;
+	background-image: -moz-linear-gradient(top, transparent 0%, transparent 10%, rgba(0,0,0,0.05) 65%, rgba(0,0,0,0.1) 100%); 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(10%,transparent), color-stop(65%,rgba(0,0,0,0.05)), color-stop(100%,rgba(0,0,0,0.1)));  
+	//background-repeat: no-repeat;
+	//background-position: left top; 
+	
 }
 
 
