@@ -2,9 +2,12 @@ GEM
   remote: http://rubygems.org/
   specs:
     rack (1.4.1)
+    rack-mobile-detect (0.4.0)
+      rack
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rack
+  rack-mobile-detect
