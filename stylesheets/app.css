@@ -216,15 +216,19 @@ a, a:hover, a:link, a:visited {
 }
 
 .footer-content {
+
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: right;
+
 }
 
 .footer-content a {
+
   color: white;
   font-size: 14px;
   text-decoration: none;
+
 }
 
 
@@ -234,11 +238,14 @@ ul.link-list {
 	padding: 0;
 	list-style: none;
 	overflow: hidden;
+
 }
 
 ul.link-list.right {
+
 	float: right;
 }
+
 
 ul.link-list li {
 
@@ -274,7 +281,7 @@ ul.link-list li {
 }
 
 
-
+/*--------------TEXT----------------------*/
 
 h1.page-title {
 
@@ -350,18 +357,6 @@ h5.faq-subtitle.primero {
 }
 
 
-.faq-subtitle-container {
-
-
-		border-bottom: 1px solid #b9b9b9;
-
-		-webkit-box-shadow: 0px 1px 0px 0 white;
-		-moz-box-shadow: 0px 1px 0px 0 white;
-		box-shadow: 0px 1px 0px 0 white;
-
-
-}
-
 p.biography {
 
 	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.65);
@@ -410,12 +405,97 @@ p.address {
 }
 
 
+
+.footer-text {
+
+	color:#e2845f;
+	font-size: 16px;
+	text-shadow: 0 -1px 0px rgba(0,0,0,0.4);
+	//margin-bottom: 0px;
+	//display: inline;
+
+}
+
+
+
+
+.footer-text.is-bold {
+
+	font-weight: bold;
+
+}
+
+
+.coming-soon {
+
+	
+	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.65);
+	color:black;
+	font-size: 18px;
+	display: inline;
+	letter-spacing: 0.5pt;
+	//margin-bottom: 5px;
+	
+
+}
+
+
+.under-construction {
+
+	
+	font-family: 'Yellowtail', cursive;
+
+	margin-top: 30%;
+	text-align: center;
+
+	font-size: 80px;
+	
+	text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4), 0 1px 0px rgba(255, 255, 255, 0.2);
+	font-style: italic;
+	font-weight: bold;
+
+
+}
+
+
+
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faq-subtitle-container {
+
+
+		border-bottom: 1px solid #b9b9b9;
+
+		-webkit-box-shadow: 0px 1px 0px 0 white;
+		-moz-box-shadow: 0px 1px 0px 0 white;
+		box-shadow: 0px 1px 0px 0 white;
+
+
+}
+
+
+
 .location-picture {
-  border: 5px solid white;
+  	
+  	border: 5px solid white;
 	-webkit-box-shadow: 0px 1px 10px 0 rgba(0,0,0,0.8);
 	-moz-box-shadow: 0px 1px 10px 0 rgba(0,0,0,0.8);
 	box-shadow: 0px 1px 10px 0 rgba(0,0,0,0.8);
 }
+
+
 
 
 .picture {
@@ -519,22 +599,6 @@ p.address {
 	margin-left: 42%;
 }
 
-.footer-text {
-
-	color:#858484;
-	font-size: 16px;
-	font-family: 'Lato', sans-serif;
-	//text-shadow: 0 -1px 0px rgba(0,0,0,0.4);
-	margin-bottom: 0px;
-	display: inline;
-}
-
-
-.footer-text.is-bold {
-
-	font-weight: bold;
-
-}
 
 .footer-links {
 
@@ -544,18 +608,7 @@ p.address {
 }
 
 
-.coming-soon {
 
-	
-	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.65);
-	color:black;
-	font-size: 18px;
-	display: inline;
-	letter-spacing: 0.5pt;
-	//margin-bottom: 5px;
-	
-
-}
 
 .store-icon {
 
@@ -572,45 +625,38 @@ p.address {
 }
 
 
-.under-construction {
-
-	
-	font-family: 'Yellowtail', cursive;
-
-	margin-top: 30%;
-	text-align: center;
-
-	font-size: 80px;
-	
-	text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4), 0 1px 0px rgba(255, 255, 255, 0.2);
-	font-style: italic;
-	font-weight: bold;
-
-
-}
-
 
 .contact-item {
+
   font-size: 18px;
   font-style: italic;
   margin-bottom: 50px;
+
 }
 
 .contact-item a {
+
   color:#e2845f;
   text-decoration: none;
   text-shadow: 0px 0px 0px;
+
 }
 
 
 .breadcrumb {
+
   margin-bottom: 20px;
+
 }
 
+
+
 .breadcrumb a {
+
   color:#000;
   text-decoration: none;
   text-shadow: 0px 0px 0px;
+
 }
 
 
@@ -620,6 +666,11 @@ p.address {
 	background-repeat: repeat;
 
 }
+
+
+
+
+
 
 .background-pattern {
 
@@ -649,8 +700,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .expand {
 
-	
-width: 100%;
+
+	width: 100%;
 
 }
 

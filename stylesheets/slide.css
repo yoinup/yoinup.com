@@ -86,21 +86,21 @@ body {
 
 .sl .logo {
 	position: absolute;
-	bottom: 70%;
+	bottom: 63%;
 	left: 30%;
 	margin: 0 0 0 -130px;
 }
 
 .sl .claim {
 	position: absolute;
-	bottom: 60%;
+	bottom: 55%;
 	left: 30%;
 	margin: 0 0 0 -130px;
 }
 
 .sl .gettheapp {
 	position: absolute;
-	bottom: 40%;
+	bottom: 39%;
 	left: 30%;
 	margin: 0 0 0 -130px;
 }
@@ -113,20 +113,24 @@ body {
 }
 
 .sl .footer-landing {
-  position: absolute;
+  	
+  	position: absolute;
 	bottom: 10px;
-	left: 30%;
+	left: 33%;
 	margin: 0 0 0 -130px;
 }
 
 .sl .footer-landing .footer-item {
   float: left;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .sl .footer-landing .footer-item a {
-  color: white;
-  font-size: 16px;
+  
+
+  color: #e2845f;
+  font-size: 14px;
+  text-shadow: 0 -1px 0px rgba(0,0,0,0.4);
   text-decoration: none;
 }
 
@@ -356,6 +360,24 @@ body {
 
 .sl-slide-vertical .sl-slide-inner {
 	background: #ccc;
+}
+
+
+.central-message{
+
+	position:absolute;	
+	top:5%;
+	left: 45%;	
+	color:#f2f2f2;
+
+	font-family: 'Yellowtail', cursive;
+
+	font-size: 30px;
+	
+	//text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4), 0 1px 0px rgba(255, 255, 255, 0.2);
+	font-style: italic;
+	font-weight: bold;
+
 }
 
 
