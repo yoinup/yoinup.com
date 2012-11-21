@@ -87,28 +87,28 @@ body {
 .sl .logo {
 	position: absolute;
 	bottom: 63%;
-	left: 30%;
+	left: 25%;
 	margin: 0 0 0 -130px;
 }
 
 .sl .claim {
 	position: absolute;
-	bottom: 55%;
-	left: 30%;
+	bottom: 52%;
+	left: 25%;
 	margin: 0 0 0 -130px;
 }
 
 .sl .gettheapp {
 	position: absolute;
 	bottom: 39%;
-	left: 30%;
+	left: 25%;
 	margin: 0 0 0 -130px;
 }
 
 .sl .iphone {
 	position: absolute;
 	bottom: -10px;
-	left: 50%;
+	left: 55%;
 	margin: 0 0 0 -50px;
 }
 
@@ -116,7 +116,7 @@ body {
   	
   	position: absolute;
 	bottom: 10px;
-	left: 33%;
+	left: 25%;
 	margin: 0 0 0 -130px;
 }
 
