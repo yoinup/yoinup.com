@@ -9,12 +9,10 @@
         <meta name="keywords" content="yoin, invitation, social, app, iphone, geo, geolocation" />
 		
         <link rel="stylesheet" type="text/css" href="./stylesheets/slide.css" />
-        
-        
-        
-		    <script type="text/javascript" src="./javascripts/modernizr.custom.79639.js"></script>
+        <script type="text/javascript" src="./javascripts/modernizr.custom.79639.js"></script>
 		    
       	<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="./stylesheets/mailchimp.css" />
 
       	<!-- IE Fix for HTML5 Tags -->
       	<!--[if lt IE 9]>
@@ -44,12 +42,25 @@
 
 				    <div class="sl-slider">
 				
-					<div class="sl-slide bg-1">
+					<div id="slide1" class="sl-slide bg-1">
 						<div class="sl-slide-inner">
 		
 						  <img class="logo" src="images/yoin_logo.png" />
 						  <img class="claim" src="images/claim1.png" />
-						  <img class="gettheapp" src="images/get_the_app.png" />
+
+                          <div class="signup-section">
+                              <form class="signup-form">
+                                  <div class="signup-section-inner">
+                                      <input type="email" value="" name="EMAIL" class="signup-email required email" placeholder="Email"></input>
+                                      <button type="submit" value="Subscribe" name="subscribe" class="signup-button button">Subscribe</button>
+                                  </div>
+                                  <div class="space by-one"></div>
+                                  <div class="signup-title signup-text">Sign up to be a beta user!</div>
+                              </form>
+                              <div class="signup-response signup-text" style="display:none"></div>
+                          </div>
+
+
 						  <img class="iphone" src="images/iphone1.png" />
 							<div class="footer-landing">
 							  <div class="footer-item">
@@ -65,11 +76,23 @@
 						</div>
 					</div>
 					
-					<div class="sl-slide bg-2">
+					<div id="slide2" class="sl-slide bg-2">
 						<div class="sl-slide-inner">
 						  <img class="logo" src="images/yoin_logo.png" />
 						  <img class="claim" src="images/claim2.png" />
-						  <img class="gettheapp" src="images/get_the_app.png" />
+
+                          <div class="signup-section">
+                              <form class="signup-form">
+                                  <div class="signup-section-inner">
+                                      <input type="email" value="" name="EMAIL" class="signup-email required email" placeholder="Email"></input>
+                                      <button type="submit" value="Subscribe" name="subscribe" class="signup-button button">Subscribe</button>
+                                  </div>
+                                  <div class="space by-one"></div>
+                                  <div class="signup-title signup-text">Sign up to be a beta user!</div>
+                              </form>
+                              <div class="signup-response signup-text" style="display:none"></div>
+                          </div>
+
 						  <img class="iphone" src="images/iphone2.png" />
 							<div class="footer-landing">
 							  <div class="footer-item">
@@ -85,12 +108,24 @@
 						</div>
 					</div>
 					
-					<div class="sl-slide bg-3">
+					<div id="slide3" class="sl-slide bg-3">
 						<div class="sl-slide-inner">
 						  <img class="logo" src="images/yoin_logo.png" />
 						  <img class="claim" src="images/claim3.png" />
-						  <img class="gettheapp" src="images/get_the_app.png" />
-						  <img class="iphone" src="images/iphone3.png" />
+
+                          <div class="signup-section">
+                              <form class="signup-form">
+                                  <div class="signup-section-inner">
+                                      <input type="email" value="" name="EMAIL" class="signup-email required email" placeholder="Email"></input>
+                                      <button type="submit" value="Subscribe" name="subscribe" class="signup-button button">Subscribe</button>
+                                  </div>
+                                  <div class="space by-one"></div>
+                                  <div class="signup-title signup-text">Sign up to be a beta user!</div>
+                              </form>
+                              <div class="signup-response signup-text" style="display:none"></div>
+                          </div>
+
+                          <img class="iphone" src="images/iphone3.png" />
 							<div class="footer-landing">
 							  <div class="footer-item">
 							    <a href="">Work with us</a>
@@ -177,5 +212,57 @@
 			
 			});
 		</script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    ['#slide1', '#slide2', '#slide3'].forEach(function(item) {
+        $(item).submit(function(evt) {
+            evt.preventDefault();
+
+            var $email = $(item + ' .signup-email');
+            var $form = $(item + ' .signup-form');
+            var $response = $(item + ' .signup-response');
+            console.log( $email.val() );
+
+            var next = function(msg) {
+                if ( !msg ) {
+                    msg = 'Ups, there was an error with your request. Try it again.';
+                }
+                $form.hide();
+                $response.text(msg);
+                $response.show();
+                $email.val('');
+            };
+
+            $.ajax({
+                url: 'http://yoinup.us6.list-manage1.com/subscribe/post-json?u=193e68a9177bafbb6f0a2bc4f&id=0441ad7180&c=?', 
+                type: 'POST',
+                dataType: 'json',
+                data: {EMAIL: $email.val() },
+                contentType: "application/json; charset=utf-8",
+                success: function(response) {
+                    var msg; 
+                    if ( response.result === "success" ) {
+                        msg = response.msg;
+                    }
+                    next(msg);
+                },
+                error: function() {
+                    console.log('error....');
+                    next(msg);
+                }
+            });
+
+
+        });
+    });
+});
+
+</script>
+<!--End mc_embed_signup-->
 	</body>
 </html>
+
+
