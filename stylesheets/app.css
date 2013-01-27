@@ -217,7 +217,7 @@ a, a:hover, a:link, a:visited {
 .footer-content {
 
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	text-align: right;
 
 }
@@ -229,6 +229,22 @@ a, a:hover, a:link, a:visited {
   text-decoration: none;
 
 }
+
+.subfooter-content {
+
+	text-align: right;
+	padding-bottom: 20px;
+
+}
+
+.subfooter-content a {
+
+  color: grey;
+  font-size: 11px;
+  text-decoration: none;
+
+}
+
 
 
 ul.link-list {
@@ -771,10 +787,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 
 /* -----------------------------------------
-	 Page Name 1
+	 Legal content
 ----------------------------------------- */
 
+.legal-content, .legal-date {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
 
+.legal-content  a {
+  color: black;
+  text-shadow: none;
+}
 
 
 /* -----------------------------------------
