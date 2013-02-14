@@ -98,6 +98,13 @@ body {
 	margin: 0 0 0 -130px;
 }
 
+.sl .app-store {
+	position: absolute;
+	bottom: 20%;
+	left: 30%;
+	margin: 0 0 0 -130px;
+}
+
 .sl .gettheapp {
 	position: absolute;
 	bottom: 39%;
