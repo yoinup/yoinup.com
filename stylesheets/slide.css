@@ -100,7 +100,14 @@ body {
 
 .sl .app-store {
 	position: absolute;
-	bottom: 20%;
+	bottom: 40%;
+	left: 30%;
+	margin: 0 0 0 -130px;
+}
+
+.sl .android-store {
+	position: absolute;
+	bottom: 25%;
 	left: 30%;
 	margin: 0 0 0 -130px;
 }
