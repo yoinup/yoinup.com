@@ -24,20 +24,20 @@ html, body {
 body#landing {
   height: 100%;
   width: 100%;
-	background: #000 url('../images/yoin/bg_city.jpg');
+	background: #000 url('../images/web/bg_city.jpg');
 	background-size: cover;
   background-repeat:no-repeat;
   background-position:50% 50%;
 }
 
 body#error {
-	background: #000 url('../images/yoin/bg_error.jpg');
+	background: #000 url('../images/web/bg_error.jpg');
 }
 
 body#inner {
 	
 	
-	//background: #dcdcdc url('../images/yoin/innerbg.jpg') no-repeat left top;
+	//background: #dcdcdc url('../images/web/innerbg.jpg') no-repeat left top;
 
 	
 	background-color: #DCDCDC;
@@ -54,12 +54,12 @@ body#inner {
 body#half-inner {
 	
 	
-	background: #dcdcdc url('../images/yoin/innerbg_02.jpg') no-repeat left top;
+	background: #dcdcdc url('../images/web/innerbg_02.jpg') no-repeat left top;
 
 	/*
 	background-color: #DCDCDC;
-	background-image: url('../images/yoin/innerbg.jpg'), -moz-linear-gradient(top, transparent 0%, transparent 10%, rgba(0,0,0,0.05) 65%, rgba(0,0,0,0.1) 100%); 
-	background-image: url('../images/yoin/innerbg.jpg'),  -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(10%,transparent), color-stop(65%,rgba(0,0,0,0.05)), color-stop(100%,rgba(0,0,0,0.1)));  
+	background-image: url('../images/web/innerbg.jpg'), -moz-linear-gradient(top, transparent 0%, transparent 10%, rgba(0,0,0,0.05) 65%, rgba(0,0,0,0.1) 100%); 
+	background-image: url('../images/web/innerbg.jpg'),  -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(10%,transparent), color-stop(65%,rgba(0,0,0,0.05)), color-stop(100%,rgba(0,0,0,0.1)));  
 	background-repeat: no-repeat;
 	background-position: left top; 
 	*/
@@ -97,8 +97,8 @@ a, a:hover, a:link, a:visited {
 
 
 	background-color: #777;
-	background-image: url(../images/yoin/BG2.png), -moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.3) 60%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background-image: url(../images/yoin/BG2.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.6)), color-stop(60%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background-image: url(../images/web/BG2.png), -moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.3) 60%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background-image: url(../images/web/BG2.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.6)), color-stop(60%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
 
 	border-top: 1px solid rgba(255, 255, 255, 0.7);
 	border-bottom: 1px solid black;
@@ -199,8 +199,8 @@ a, a:hover, a:link, a:visited {
 
 	background-color: #111;
 	
-	/*background-image: url(../images/yoin/BG2.png), -moz-linear-gradient(top, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.15) 55%, rgba(255,255,255,0) 100%);
-	background-image:  url(../images/yoin/BG2.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.35)), color-stop(55%,rgba(255, 255, 255, 0.15)), color-stop(100%,rgba(255, 255, 255, 0)));*/
+	/*background-image: url(../images/web/BG2.png), -moz-linear-gradient(top, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.15) 55%, rgba(255,255,255,0) 100%);
+	background-image:  url(../images/web/BG2.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.35)), color-stop(55%,rgba(255, 255, 255, 0.15)), color-stop(100%,rgba(255, 255, 255, 0)));*/
 
 	/*border-top: 1px solid #909090;
 
@@ -275,8 +275,8 @@ ul.link-list li {
 	color: white;
 	text-align: center;
 	background-color: #fd6d35;
-	background-image: url(../images/yoin/BG2.png), -moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.3) 60%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background-image: url(../images/yoin/BG2.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.6)), color-stop(60%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background-image: url(../images/web/BG2.png), -moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.3) 60%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background-image: url(../images/web/BG2.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.6)), color-stop(60%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
 
 	border-radius: 5px;
 
@@ -726,7 +726,7 @@ p.address {
 
 .pattern-title {
 
-	background-image: url('../images/yoin/crossed_stripes.png');  
+	background-image: url('../images/web/crossed_stripes.png');  
 	background-repeat: repeat;
 
 }
