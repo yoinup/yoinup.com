@@ -11,13 +11,14 @@ class Minimal < Sinatra::Base
             File.read(File.join('./', 'index.html'))
         end
     end
-    get '/app' do
-        if ['ipad', 'iphone'].include?(request.env['X_MOBILE_DEVICE'])
-            redirect 'https://itunes.apple.com/app/invibe/id655287757'
-        elsif 'android' == request.env['X_MOBILE_DEVICE']
-            redirect 'https://play.google.com/store/apps/details?id=com.Invibe.App'
-        else
-            redirect '/'
+    get '/app/?' do
+        if request.env['X_MOBILE_DEVICE']
+            if ['ipad', 'iphone', 'ipod'].include?(request.env['X_MOBILE_DEVICE'].downcase)
+                redirect 'https://itunes.apple.com/app/invibe/id655287757'
+            elsif 'android' == request.env['X_MOBILE_DEVICE'].downcase
+                redirect 'https://play.google.com/store/apps/details?id=com.Invibe.App'
+            end
         end
+        redirect '/'
     end
 end
