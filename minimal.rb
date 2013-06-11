@@ -1,5 +1,6 @@
 require 'rubygems' if RUBY_VERSION < "1.9"
-require 'sinatra/base'
+require 'sinatra'
+require 'haml'
 
 class Minimal < Sinatra::Base
     set :static, true
@@ -20,5 +21,8 @@ class Minimal < Sinatra::Base
             end
         end
         redirect '/'
+    end
+    get '/invitation/:code/?' do
+        haml :code, :locals => { :code => params[:code]}
     end
 end
