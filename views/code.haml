@@ -1,1 +1,45 @@
-#{code}
+
+%html
+  %head
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+    %title Invibe
+    
+    <link rel="stylesheet" href="../stylesheets/foundation.css">
+    <link rel="stylesheet" href="../stylesheets/app.css">
+
+    <script src="../javascripts/modernizr.foundation.js"></script>
+
+    <script src="http://code.jquery.com/http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,700' rel='stylesheet' type='text/css'>	
+    <link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+    
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35676190-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+  %body
+
+    #wrapper
+      .expand.pattern-title
+        .expand.pattern-title.background-pattern
+          .row
+            .twelve.mobile-four.columns
+              .panel.content-title 
+                %h1.page-title INVIBE
+      .expand.fondo
+      #content.row #{code}
+
+    <script src="../javascripts/foundation.min.js"></script>
+    <script src="../javascripts/app.js"></script>

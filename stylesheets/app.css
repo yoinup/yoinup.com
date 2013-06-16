@@ -192,57 +192,57 @@ a, a:hover, a:link, a:visited {
 	margin-left: 120px; /*70px*/
 }
 
-
-
 .footer {
 	width: 100%;
-
 	background-color: #111;
-	
-	/*background-image: url(../images/web/BG2.png), -moz-linear-gradient(top, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.15) 55%, rgba(255,255,255,0) 100%);
-	background-image:  url(../images/web/BG2.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.35)), color-stop(55%,rgba(255, 255, 255, 0.15)), color-stop(100%,rgba(255, 255, 255, 0)));*/
-
-	/*border-top: 1px solid #909090;
-
-	box-shadow: inset 0 -1px 15px 0 rgba(0, 0, 0, 0.9);
-	-webkit-box-shadow: inset 0 -1px 15px 0 rgba(0, 0, 0, 0.9);
-	-moz-box-shadow:inset 0 -1px 15px 0 rgba(0, 0, 0, 0.9);*/
-
-	/*-webkit-box-shadow: 0 -5px 30px 0 rgba(0, 0, 0, 0.8);
-	-moz-box-shadow: 0 -5px 30px 0 rgba(0, 0, 0, 0.8);
-	box-shadow: 0 -5px 30px 0 rgba(0, 0, 0, 0.8);*/
-	
 }
 
-.footer-content {
-
-	padding-top: 20px;
-	padding-bottom: 10px;
-	text-align: right;
+.footer-nav {
 
 }
+.footer-nav > ul {
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
 
-.footer-content a {
+.footer-nav > ul > li {
+  display: inline;
+  padding: 0 15px;
+}
 
-  color: white;
-  font-size: 14px;
+.footer-link {
+  color: #d9d9cf;
   text-decoration: none;
-
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  line-height: 60px;
 }
 
-.subfooter-content {
-
-	text-align: right;
-	padding-bottom: 20px;
-
+.footer-link:hover {
+  text-decoration:underline;
 }
 
-.subfooter-content a {
 
-  color: grey;
-  font-size: 11px;
-  text-decoration: none;
+.footer.mobile, .footer.landing {
+	background-color: transparent;
+	position: absolute;
+  bottom: 0px;
+}
 
+.footer-nav.mobile > ul > li {
+  padding: 0 10px;
+}
+
+.footer-link.mobile {
+  line-height: 30px;
+}
+
+
+
+.footer-nav.landing > ul {
+  text-align: left;
+	margin-left: 50px;
 }
 
 
@@ -668,6 +668,15 @@ p.address {
 
 .footer-item {
   text-align: right;
+}
+
+.footer-item a {
+
+  color: #d9d9cf;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+
 }
 
 

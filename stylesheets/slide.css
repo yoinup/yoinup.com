@@ -126,37 +126,6 @@ body {
 	margin: 0 0 0 -50px;
 }
 
-.sl .footer-landing {
-  	
-  position: absolute;
-	bottom: 30px;
-	left: 25%;
-	margin-left: -130px;
-}
-
-.sl .footer-landing.is-bottom {
-
-	bottom: 10px;
-	margin-left: -105px;
-
-}
-
-.sl .footer-landing .footer-item {
-  float: left;
-  margin-right: 40px;
-}
-
-.sl .footer-landing .footer-item a {
-  
-
-  color: #e2845f;
-  font-size: 14px;
-  text-shadow: 0 -1px 0px rgba(0,0,0,0.4);
-  text-decoration: none;
-}
-
-
-
 
 .sl .sl-slide h2 {
 	color: #000;
