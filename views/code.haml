@@ -11,9 +11,7 @@
 
     <script src="../javascripts/modernizr.foundation.js"></script>
 
-    <script src="http://code.jquery.com/http://code.jquery.com/jquery-1.9.1.min.js"></script>
-
-    
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     
     <link href='http://fonts.googleapis.com/css?family=Lato:100,700' rel='stylesheet' type='text/css'>	
     <link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
@@ -31,15 +29,52 @@
 
   %body
 
-    #wrapper
-      .expand.pattern-title
+    #wrapper.expand.fondo
+      #header.expand.pattern-title
         .expand.pattern-title.background-pattern
           .row
             .twelve.mobile-four.columns
               .panel.content-title 
                 %h1.page-title INVIBE
-      .expand.fondo
-      #content.row #{code}
+                %p.page-subtitle= "We believe that an invitation is a really cool way to connect and share with the people that matter to you. So we decided, why don’t make this easier !!. Invibe is a mobile app that let you invite your friends or people nearby you to daily goods (Coffee, drinks and tickets)."
+
+      #content.row 
+        .invitation-localizer.box
+          .box-content
+            .qr-container
+              #qr-code
+          .box-title-bottom.is-center
+            .main-text #{code}
+            .detail-text Show this code to the bartender to get your gift
+
+    
+      #footer
+        .footer-nav
+          %ul
+            %li
+              %a.footer-link{:href=> "../work.html"} Work with us
+            %li
+              %a.footer-link{:href=> "../team.html"} Team
+            %li
+              %a.footer-link{:href=> "../contact.html"} Contact
+            %li
+              %a.footer-link{:href=> "../terms_of_service.html"} Terms of Service
+            %li
+              %a.footer-link{:href=> "../privacy.html"} Privacy
+
+          
+
 
     <script src="../javascripts/foundation.min.js"></script>
     <script src="../javascripts/app.js"></script>
+    <script src="../javascripts/qrcode.js"></script>
+    <script src="../javascripts/jquery.qrcode.js"></script>
+    <script src="../javascripts/views/code.js"></script>
+
+
+    :javascript
+      $('#content').css('min-height', $(window).height() - $('#header').height() - $('#footer').height()  );
+
+
+    :javascript
+      App.insertQR("#{code}");
