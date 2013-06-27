@@ -374,6 +374,9 @@ p.biography-bold {
 	margin-bottom: 10px;
 }
 
+a.mail, a.mail:visited, a.mail:hover {
+  color: #fd6d35;
+}
 
 
 p.biography.centered {
