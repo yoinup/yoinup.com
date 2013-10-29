@@ -96,6 +96,11 @@ body {
 	bottom: 52%;
 	left: 25%;
 	margin: 0 0 0 -130px;
+
+	margin: 0 0 0 -100px;
+	bottom: 54%;
+
+  width: 285px;
 }
 
 .sl .app-store {
